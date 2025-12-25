@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Skydash</title>
+    <link href="/assets3/css/Bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets3/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="login-wrapper">
+        <div class="login-card">
+            <div class="text-center mb-4">
+                <div class="logo-wrapper">
+                    <img src="/assets3/images/logo.svg" alt="logo-login" class="login-logo">
+                </div>
+            </div>
+
+            <h5 class="fw-bold">Hello! let's get started</h5>
+            <p class="text-muted mb-4">Sign in to continue.</p>
+
+            <form action="/auth/loginUser" method="post">
+                <div class="mb-3">
+                    <input type="text" class="form-control custom-input" placeholder="Username">
+                </div>
+
+                <div class="mb-3">
+                    <input type="password" class="form-control custom-input" placeholder="Password">
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 login-btn">
+                    SIGN IN
+                </button>
+                <p class="text-center mt-4">
+                    Don't have an account?
+                    <a href="/auth/sign-up" class="create-link">Create</a>
+                </p>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

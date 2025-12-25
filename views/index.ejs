@@ -1,0 +1,56 @@
+<%- include('./partials/start.ejs') %>
+
+  <div class="row">
+    <div class="col-md-12 grid-margin">
+      <div class="row mb-3">
+        <div class="col-12">
+          <h3 class="fw-bold">Blog Collection</h3>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <% blogs.map((blog)=> { %>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card blog-card h-100 border-0 shadow-sm">
+              <img src="/<%= blog.file %>" class="card-img-top rounded-top" alt="<%= blog.name %>">
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex flex-wrap gap-2 mb-2">
+                  <% blog.tags.split(',').forEach(tag=> { %>
+                    <span class="badge bg-primary blog-badge">
+                      <%= tag.trim() %>
+                    </span>
+                    <% }) %>
+                </div>
+                <h5 class="card-title mt-2 fw-semibold blog-title">
+                  <%= blog.name %>
+                </h5>
+                <p class="card-text text-muted blog-desc flex-grow-1" data-full="<%= blog.desc %>">
+                  <%= blog.desc.length> 150 ? blog.desc.slice(0,150) + '...' : blog.desc %>
+                </p>
+              </div>
+
+              <div class="card-footer bg-transparent border-0 pt-0">
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-sm btn-outline-primary read-toggle blog-btn">
+                    Read More
+                  </button>
+                  <div class="d-flex gap-2">
+                    <a href="/admin/edit-blog/<%= blog._id %>" class="btn btn-sm btn-outline-warning blog-btn">
+                      Edit
+                    </a>
+                    <a href="/admin/delete-blog/<%= blog._id %>" class="btn btn-sm btn-outline-danger blog-btn">
+                      Delete
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% }) %>
+
+      </div>
+    </div>
+  </div>
+
+
+  <%- include('./partials/end.ejs') %>
