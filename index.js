@@ -4,6 +4,7 @@ import connectDb from "./config/db.js"
 import cookieParser from 'cookie-parser'
 import adminRouter from './routes/adminRoutes.js'
 import authRouter from './routes/authRoutes.js'
+import clientRouter from './routes/clientRoutes.js'
 
 const PORT = process.env.PORT || 7000
 
@@ -20,6 +21,7 @@ app.use('/uploads', express.static('uploads'))
 
 app.use('/auth' , authRouter)
 app.use('/admin', adminRouter)
+app.use('/' , clientRouter)
 
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`)

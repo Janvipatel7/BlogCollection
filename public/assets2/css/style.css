@@ -1,0 +1,31 @@
+:root {
+  --brand: #4b49ac;
+}
+
+.text-brand {
+  color: var(--brand) !important;
+}
+
+.bg-brand {
+  background-color: var(--brand) !important;
+}
+
+.btn-brand {
+  background-color: var(--brand);
+  color: #fff;
+  border: none;
+}
+
+.badge-brand {
+  background-color: var(--brand);
+}
+
+.border-brand {
+  border-color: var(--brand) !important;
+}
+
+
+.border-brand:hover {
+  background-color: #3f3da1 !important;
+  color: #fff !important;
+}

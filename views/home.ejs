@@ -1,0 +1,49 @@
+<%- include('./partials/cStart.ejs') %>
+    <section class="py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Latest Blogs</h2>
+                <p class="text-muted">Fresh content from our writers</p>
+            </div>
+
+            <div class="row g-4">
+
+                <% blogs.forEach(blog=> { %>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+
+                            <img src="/<%= blog.file %>" class="card-img-top" alt="blog image">
+
+                            <div class="card-body">
+                                <span class="badge badge-brand mb-2">
+                                    <%= blog.tags %>
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    <%= blog.name %>
+                                </h5>
+
+                                <p class="card-text text-muted blog-desc" data-full="<%= blog.desc %>"
+                                    data-short="<%= blog.desc.length > 80 ? blog.desc.substring(0, 80) + '...' : blog.desc %>">
+                                    <%= blog.desc.length> 80 ? blog.desc.substring(0, 80) + '...' : blog.desc %>
+                                </p>
+                            </div>
+
+                            <div class="card-footer bg-white border-0">
+                                <a href="javascript:void(0)"
+                                    class="btn  w-100 border-brand text-brand read-toggle">
+                                    Read More
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <% }) %>
+
+            </div>
+
+        </div>
+    </section>
+
+<%- include('./partials/cEnd.ejs') %>
