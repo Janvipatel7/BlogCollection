@@ -19,10 +19,11 @@ const getSignUp  = async (req , res) => {
 const loginUser = async (req, res) => {
     try {
         let credentials = req.body
+        console.log(credentials)
         const user = await User.findOne(credentials)
-
+        console.log(user)
         if (!user) {
-            return res.send('Invalid Email-ID or Password')
+            return res.send('Invalid Username or Password')
         }
 
         res.cookie('auth', user._id, {
