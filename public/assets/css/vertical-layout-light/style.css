@@ -11030,8 +11030,7 @@ textarea.is-invalid.tt-hint {
   }
 }
 
-.btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel, .wizard > .actions a {
-  display: inline-block;
+/* .btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel, .wizard > .actions a {
   font-weight: 400;
   color: #1F1F1F;
   text-align: center;
@@ -11050,7 +11049,7 @@ textarea.is-invalid.tt-hint {
   .btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel, .wizard > .actions a {
     transition: none;
   }
-}
+} */
 
 .btn:hover, .fc button:hover, .ajax-upload-dragdrop .ajax-file-upload:hover, .swal2-modal .swal2-buttonswrapper .swal2-styled:hover, .wizard > .actions a:hover {
   color: #1F1F1F;
@@ -11061,7 +11060,7 @@ textarea.is-invalid.tt-hint {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-
+/* 
 .btn.disabled, .fc button.disabled, .ajax-upload-dragdrop .disabled.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .disabled.swal2-styled, .wizard > .actions a.disabled, .btn:disabled, .fc button:disabled, .ajax-upload-dragdrop .ajax-file-upload:disabled, .swal2-modal .swal2-buttonswrapper .swal2-styled:disabled, .wizard > .actions a:disabled {
   opacity: 0.65;
 }
@@ -11079,9 +11078,9 @@ fieldset:disabled .swal2-modal .swal2-buttonswrapper a.swal2-styled,
 fieldset:disabled .wizard > .actions a,
 .wizard > .actions fieldset:disabled a {
   pointer-events: none;
-}
+} */
 
-.btn-primary, .wizard > .actions a {
+/* .btn-primary, .wizard > .actions a {
   color: #fff;
   background-color: #4B49AC;
   border-color: #4B49AC;
@@ -11118,7 +11117,7 @@ fieldset:disabled .wizard > .actions a,
 .show > .btn-primary.dropdown-toggle:focus,
 .wizard > .actions .show > a.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(102, 100, 184, 0.5);
-}
+} */
 
 .btn-secondary, .wizard > .actions .disabled a {
   color: #212529;

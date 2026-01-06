@@ -29,3 +29,195 @@
   background-color: #3f3da1 !important;
   color: #fff !important;
 }
+
+.btn-signup{
+  background-color: var(--brand);
+  color: #fff;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-signup:hover{
+  background-color: white;
+  border: 1px solid var(--brand);
+  color: var(--brand);
+  transition: all 0.3s ease;
+}
+
+.footer-brand {
+    background: linear-gradient(
+        135deg,
+        #4b4dbf 0%,
+        #5a5bd6 40%,
+        #6b6df0 100%
+    );
+}
+
+.blog-desc.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-desc.expanded {
+  display: block;
+}
+
+.footer-text {
+    color: #e8e9ff;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-brand h5,
+.footer-brand h6 {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.footer-links li a {
+    color: #d6d7ff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+
+.footer-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #ffffff;
+}
+
+.footer-links li a:hover::after {
+    width: 100%;
+}
+
+.footer-brand .bi {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.footer-brand .bi-facebook:hover {
+    background: #1877f2;
+}
+
+.footer-brand .bi-instagram:hover {
+    background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+}
+
+.footer-brand .bi-twitter-x:hover {
+    background: #000000;
+}
+
+.footer-brand .bi-linkedin:hover {
+    background: #0a66c2;
+}
+
+.footer-input {
+    border: none;
+    border-radius: 6px 0 0 6px;
+}
+
+.footer-input:focus {
+    box-shadow: 0 0 0 3px rgba(90, 91, 214, 0.4);
+}
+
+.footer-brand .btn-light {
+    background: #ffffff;
+    color: #4b4dbf;
+    border-radius: 0 6px 6px 0;
+    transition: all 0.3s ease;
+}
+
+.footer-brand .btn-light:hover {
+    background: #3f40a8;
+    color: #ffffff;
+}
+
+.footer-bottom {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.15)
+    );
+    font-size: 14px;
+    color: #e6e7ff;
+}
+
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin: 6px 0;
+  }
+  .navbar-nav .btn-signup {
+    display: inline-block;
+    width: auto;
+    margin-top: 10px;
+    padding: 10px 28px;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .navbar-collapse {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 18px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  section .row {
+    text-align: center;
+  }
+  section h1 {
+    font-size: 2.2rem;
+  }
+  section p {
+    font-size: 15px;
+  }
+  section img {
+    margin-top: 25px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  section h1 {
+    font-size: 1.8rem;
+  }
+  section p {
+    font-size: 14px;
+  }
+  .btn-signup.btn-lg {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+}
